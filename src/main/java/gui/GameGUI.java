@@ -5,12 +5,7 @@
  */
 package gui;
 
-import org.jdesktop.swingbinding.adapters.JListAdapterProvider;
-
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.AdjustmentEvent;
-import java.awt.event.AdjustmentListener;
 
 /**
  *
@@ -18,48 +13,18 @@ import java.awt.event.AdjustmentListener;
  */
 public class GameGUI extends javax.swing.JPanel {
 
+    private int amount_games = -1;
+
     /**
      * Creates new form GameGUI
      */
-    public GameGUI() {
-
+    public GameGUI(int amount_games) {
+        this.amount_games = amount_games;
         initComponents();
-        testData();
+        insert_TestData();
     }
 
-    private void testData() {
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
-        list1.add("Stefan 15  (250 left)");
+    private void insert_TestData() {
         list1.add("Stefan 15  (250 left)");
         list1.add("Stefan 15  (250 left)");
         list1.add("Stefan 15  (250 left)");

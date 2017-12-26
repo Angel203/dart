@@ -15,12 +15,14 @@ import javax.swing.*;
  * @author Stefan
  */
 public class CreatePlayer extends javax.swing.JPanel {
-private int amount;
+private int amount_players;
+private int amount_games;
     /**
      * Creates new form CreatePlayer
      */
-    public CreatePlayer(int amount) {
-        this.amount = amount;
+    public CreatePlayer(int amount_players, int amount_games) {
+        this.amount_players = amount_players;
+        this.amount_games = amount_games;
         initComponents();
     }
 
@@ -57,6 +59,7 @@ private int amount;
         jLabel3.setText("Nickname");
 
         label_error.setText("label_error");
+        label_error.setVisible(false);
 
         btn_back.setLabel("back");
         btn_back.addActionListener(new java.awt.event.ActionListener() {
@@ -132,6 +135,7 @@ private int amount;
         if(leer)
         {
             label_error.setText("Bitte alle Felder ausfüllen");
+            label_error.setVisible(true);
             return;
         }
         Player player = new Player(txt_name.getText(), txt_surname.getText(), txt_nickname.getText());
@@ -139,7 +143,7 @@ private int amount;
         {
             System.out.println("Spieler erfolgreich eingefügt: " + player.toString());
             JFrame topFrame = (JFrame) SwingUtilities.getWindowAncestor(this);
-            JPanel selectPlayer = new SelectPlayer(amount);
+            JPanel selectPlayer = new SelectPlayer(amount_players, amount_games);
             topFrame.setContentPane(selectPlayer);
             topFrame.pack();
         }
@@ -153,7 +157,7 @@ private int amount;
     private void btn_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_backActionPerformed
         // TODO add your handling code here:
         JFrame topFrame = (JFrame) SwingUtilities.getWindowAncestor(this);
-        JPanel selectPlayer = new SelectPlayer(amount);
+        JPanel selectPlayer = new SelectPlayer(amount_players, amount_games);
         topFrame.setContentPane(selectPlayer);
         topFrame.pack();
     }//GEN-LAST:event_btn_backActionPerformed

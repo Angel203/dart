@@ -20,17 +20,17 @@
               <EmptySpace min="-2" pref="147" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_p6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Component id="p6" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_p1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_p2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_p3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_p4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_p5" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -42,7 +42,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="265" max="32767" attributes="0"/>
+              <EmptySpace pref="310" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="button4" max="32767" attributes="0"/>
                   <Component id="button3" max="32767" attributes="0"/>
@@ -66,21 +66,21 @@
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="p1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_p1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_p2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="p2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_p3" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="p3" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_p4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="p4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -94,11 +94,11 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="p5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_p5" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_p6" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="p6" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -200,32 +200,32 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="lbl_p1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Player 1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="lbl_p2">
       <Properties>
         <Property name="text" type="java.lang.String" value="Player 2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="lbl_p3">
       <Properties>
         <Property name="text" type="java.lang.String" value="Player 3"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="lbl_p4">
       <Properties>
         <Property name="text" type="java.lang.String" value="Player 4"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
+    <Component class="javax.swing.JLabel" name="lbl_p6">
       <Properties>
         <Property name="text" type="java.lang.String" value="Player 6"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
+    <Component class="javax.swing.JLabel" name="lbl_p5">
       <Properties>
         <Property name="text" type="java.lang.String" value="Player 5"/>
       </Properties>
@@ -244,8 +244,11 @@
     </Component>
     <Component class="java.awt.Button" name="button4">
       <Properties>
-        <Property name="label" type="java.lang.String" value="Spieler hinzuf&#xfc;gen"/>
+        <Property name="label" type="java.lang.String" value="add player"/>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="add player"/>
+      </AccessibilityProperties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button4ActionPerformed"/>
       </Events>

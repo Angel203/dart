@@ -32,8 +32,10 @@ public class MainScreen extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         amount_player = new javax.swing.JComboBox<>();
         btn_start = new java.awt.Button();
+        label1 = new java.awt.Label();
+        amount_games = new javax.swing.JComboBox<>();
 
-        jLabel1.setText("Select how many players want to play");
+        jLabel1.setText("How many players want to play");
 
         amount_player.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6" }));
 
@@ -45,17 +47,22 @@ public class MainScreen extends javax.swing.JPanel {
             }
         });
 
+        label1.setText("How many scores to win a set");
+
+        amount_games.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(347, 347, 347)
-                .addComponent(jLabel1)
-                .addContainerGap(327, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(173, 173, 173)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(amount_games, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(amount_player, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn_start, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(396, 396, 396))
@@ -63,11 +70,15 @@ public class MainScreen extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addComponent(jLabel1)
-                .addGap(74, 74, 74)
-                .addComponent(amount_player, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(53, 53, 53)
+                .addGap(140, 140, 140)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(amount_player, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(amount_games, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
                 .addComponent(btn_start, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(266, Short.MAX_VALUE))
         );
@@ -77,7 +88,7 @@ public class MainScreen extends javax.swing.JPanel {
         // TODO add your handling code here:
         if(evt.getSource()==btn_start){
             JFrame topFrame = (JFrame) SwingUtilities.getWindowAncestor(this);
-            JPanel selectPlayer = new SelectPlayer(Integer.parseInt(amount_player.getSelectedItem().toString()));
+            JPanel selectPlayer = new SelectPlayer(Integer.parseInt(amount_player.getSelectedItem().toString()), Integer.parseInt(amount_games.getSelectedItem().toString()));
             topFrame.setContentPane(selectPlayer);
             topFrame.pack();
         }
@@ -85,8 +96,10 @@ public class MainScreen extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> amount_games;
     private javax.swing.JComboBox<String> amount_player;
     private java.awt.Button btn_start;
     private javax.swing.JLabel jLabel1;
+    private java.awt.Label label1;
     // End of variables declaration//GEN-END:variables
 }

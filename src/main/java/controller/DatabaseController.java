@@ -15,7 +15,7 @@ public final class DatabaseController {
         return PlayerDB.getAllPlayers();
     }
 
-    public static boolean insertPlayer(Player player ){
+    public static boolean insertPlayer(Player player){
         //TODO implement checks
         return PlayerDB.insertPlayer(player);
     }
